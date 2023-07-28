@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #ebdfcb;
+  --color-text-primary: #000000;
+  --color-text-secondary: #6e6242;
+  --color-accent-primary: #979c90;
+  --color-accent-secondary: #af724d;
+}
+
+body.home-page,
+html.home-page {
+  --color-background: #ebdfcb;
+  --color-text-primary: #000000;
+  --color-text-secondary: #6e6242;
+  --color-accent-primary: #979c90;
+  --color-accent-secondary: #af724d;
+}
+
+body.dark.home-page,
+html.dark.home-page {
+  --color-background: #101e2d;
+  --color-text-primary: #fafdfd;
+  --color-text-secondary: #666161;
+  --color-accent-primary: #2f4d62;
+  --color-accent-secondary: #7f99a8;
+}
+
+body.about-page,
+html.about-page {
+  --color-background: #35a1baff;
+  --color-text-primary: #ecc9acff;
+  --color-text-secondary: #662e29ff;
+  --color-accent-primary: #293e55ff;
+  --color-accent-secondary: #528a88ff;
+}
+
+body.dark.about-page,
+html.dark.about-page {
+  --color-background: rgb(3, 2, 18);
+  --color-text-primary: #653772ff;
+  --color-text-secondary: #246ca6ff;
+  --color-accent-primary: #246ca6ff;
+  --color-accent-secondary: #295d58ff;
+}
+
+body.dark.portfolio-page,
+html.dark.portfolio-page {
+  --color-background: #171f2fff;
+  --color-text-primary: #b3d9e3ff;
+  --color-text-secondary: #505f6fff;
+  --color-accent-primary: #0f111eff;
+  --color-accent-secondary: #284461ff;
+}
+
+body.portfolio-page,
+html.portfolio-page {
+  --color-background: #b48269ff;
+  --color-text-primary: #15181eff;
+  --color-text-secondary: #94817fff;
+  --color-accent-primary: #464f5aff;
+  --color-accent-secondary: #191f27ff;
+}
+
+body.dark.blog-page,
+html.dark.blog-page {
+  --color-background: #142434ff;
+  --color-text-primary: #878992ff;
+  --color-text-secondary: #375260ff;
+  --color-accent-primary: #0d1a28ff;
+  --color-accent-secondary: #5c8794ff;
+}
+
+body.blog-page,
+html.blog-page {
+  --color-background: #cec5c0ff;
+  --color-text-primary: #625a6cff;
+  --color-text-secondary: #c3dedbff;
+  --color-accent-primary: #895559ff;
+  --color-accent-secondary: #1e1725ff;
+}
+
+.bg-primary {
+  background-color: var(--color-background);
+}
+
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.bg-accent-primary {
+  background-color: var(--color-accent-primary);
+}
+
+.text-accent-primary {
+  color: var(--color-accent-primary);
+}
+
+.bg-accent-secondary {
+  background-color: var(--color-accent-secondary);
+}
+
+.text-accent-secondary {
+  color: var(--color-accent-secondary);
+}
+
+@layer {
+  * {
+    @apply transition-all duration-300 ease-in;
+    @apply text-primary;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-accent-primary;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  p {
+    @apply text-primary;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
+a {
+  font-weight: 400;
+  @apply text-primary;
+}
+
+a:hover {
+  @apply text-accent-secondary;
+}
+
+button {
+  font-weight: 400;
+  @apply bg-accent-primary;
+}
+
+button:hover {
+  @apply bg-accent-secondary;
+}
