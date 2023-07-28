@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { Pong } from '../games/pong';
-import '../assets/styling/pong.css';
 import { useContext } from 'react';
 import { DarkModeContext } from '../context/DarkModeContext';
 import ProjectCard from '../components/ProjectCard';

@@ -1,0 +1,70 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    font-family: 'Poppins', sans-serif;
+    @apply bg-lightAbout-background text-lightAbout-primary-text dark:bg-darkAbout-background dark:text-darkAbout-primary-text;
+  }
+
+  * {
+    @apply transition-all duration-300 ease-in;
+    @apply text-lightAbout-primary-text dark:text-darkAbout-primary-text;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-lightAbout-primary-accent dark:text-darkAbout-primary-accent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  p {
+    @apply text-lightAbout-primary-text dark:text-darkAbout-primary-text;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  a {
+    font-weight: 400;
+    @apply text-lightAbout-primary-text dark:text-darkAbout-primary-text;
+  }
+
+  a:hover {
+    @apply text-lightAbout-secondary-accent dark:text-darkAbout-secondary-accent;
+  }
+
+  button {
+    font-weight: 400;
+    @apply bg-lightAbout-primary-accent dark:bg-darkAbout-primary-accent text-lightAbout-background dark:text-darkAbout-background;
+  }
+
+  button:hover {
+    @apply bg-lightAbout-secondary-accent dark:bg-darkAbout-secondary-accent;
+  }
+
+  .alert-success {
+    @apply bg-lightAbout-tertiary-accent dark:bg-darkAbout-tertiary-accent text-lightAbout-background dark:text-darkAbout-background;
+  }
+
+  .alert-error {
+    @apply bg-lightAbout-secondary-accent dark:bg-darkAbout-secondary-accent text-lightAbout-background dark:text-darkAbout-background;
+  }
+
+  .text-background {
+    @apply flex flex-col justify-center items-center backdrop-blur-sm p-[20px] rounded-2xl;
+  }
+
+  .about-section {
+    @apply flex flex-col md:flex-row bg-[url(../src/assets/images/desert_planet_landscape-day-min.png)] dark:bg-[url(../src/assets/images/desert_planet_landscape-night-min.png)] justify-center items-center min-h-screen px-8 py-16 bg-cover;
+  }
+
+  .socials-container {
+    @apply mt-4 flex gap-4 backdrop-blur-sm p-[20px] rounded-xl;
+  }
+} */
