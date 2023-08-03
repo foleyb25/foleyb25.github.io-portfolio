@@ -2,7 +2,10 @@ import { CSSTransition } from 'react-transition-group';
 
 const DropdownItem = ({ item, activeItem, onClick }) => {
   return (
-    <li className="cursor-pointer" onClick={() => onClick(item)}>
+    <li
+      className="cursor-pointer underline-animation dark:underline-animation-dark"
+      onClick={() => onClick(item)}
+    >
       {item.name}
       <CSSTransition
         in={activeItem === item}
@@ -14,7 +17,7 @@ const DropdownItem = ({ item, activeItem, onClick }) => {
           <img
             src={item.img}
             alt={item.name}
-            className="w-auto h-32 object-cover mt-2"
+            className="w-auto h-32 object-fit mt-2"
           />
           {item.info}
         </div>

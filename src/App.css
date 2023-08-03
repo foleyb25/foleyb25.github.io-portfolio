@@ -42,7 +42,7 @@ html.about-page {
 body.dark.about-page,
 html.dark.about-page {
   --color-background: rgb(3, 2, 18);
-  --color-text-primary: #653772ff;
+  --color-text-primary: rgb(136, 75, 153);
   --color-text-secondary: #246ca6ff;
   --color-accent-primary: #246ca6ff;
   --color-accent-secondary: #295d58ff;
@@ -53,7 +53,7 @@ html.dark.portfolio-page {
   --color-background: #171f2fff;
   --color-text-primary: #b3d9e3ff;
   --color-text-secondary: #505f6fff;
-  --color-accent-primary: #0f111eff;
+  --color-accent-primary: rgb(81, 92, 164);
   --color-accent-secondary: #284461ff;
 }
 
@@ -62,8 +62,8 @@ html.portfolio-page {
   --color-background: #b48269ff;
   --color-text-primary: #15181eff;
   --color-text-secondary: #94817fff;
-  --color-accent-primary: #464f5aff;
-  --color-accent-secondary: #191f27ff;
+  --color-accent-primary: rgb(37, 42, 48);
+  --color-accent-secondary: rgb(111, 118, 127);
 }
 
 body.dark.blog-page,
@@ -71,7 +71,7 @@ html.dark.blog-page {
   --color-background: #142434ff;
   --color-text-primary: #878992ff;
   --color-text-secondary: #375260ff;
-  --color-accent-primary: #0d1a28ff;
+  --color-accent-primary: rgb(44, 92, 143);
   --color-accent-secondary: #5c8794ff;
 }
 
@@ -151,4 +151,21 @@ button {
 
 button:hover {
   @apply bg-accent-secondary;
+}
+
+.underline-animation::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+.dark .underline-animation::after {
+  background: white;
 }

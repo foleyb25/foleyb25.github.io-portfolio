@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../assets/styling/components/ProjectCard.css';
 import DropdownItem from './DropdownItem';
 
-const ProjectCard = ({ items }) => {
+const ProjectCard = ({ name, items }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [activeItem, setActiveItem] = useState(null);
 
@@ -26,7 +26,7 @@ const ProjectCard = ({ items }) => {
             className="w-full h-full flex items-center justify-center text-xl font-bold"
             onClick={handleClick}
           >
-            View
+            <p>{name}</p>
           </button>
         </div>
         <div className="face back flex items-center justify-center border rounded shadow-md p-4">

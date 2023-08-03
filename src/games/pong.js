@@ -8,8 +8,8 @@ class Paddle {
     constructor(pong, isLeft) {
         this.pong = pong;
         this.canvas = pong.canvas;
-        this.width = 15;
-        this.height = 80;
+        this.width = this.canvas.width * 0.03;
+        this.height = this.canvas.height * 0.25; // 20% of the canvas height
         this.x = isLeft ? 50 : this.canvas.width - 50;
         this.y = this.canvas.height / 2;
         this.speed = 2;
@@ -65,7 +65,7 @@ class Ball {
     constructor(pong) {
         this.pong = pong;
         this.canvas = pong.canvas;
-        this.size = 15;
+        this.size = this.canvas.height * 0.05;
         this.x = this.canvas.width / 2;
         this.y = this.canvas.height / 2;
         this.speed = 2;
@@ -288,7 +288,13 @@ export class Pong {
 
         this.context.fillStyle = color;
 
-        this.context.font = '48px serif';
+        // Determine the font size as 10% of the canvas width (adjust this value as needed)
+        let fontSize = this.width * 0.1;
+
+        // Cap the font size to a maximum of 48 (optional)
+        fontSize = Math.min(fontSize, 48);
+
+        this.context.font = `${fontSize}px serif`;
         this.context.textAlign = 'center';
         this.context.textBaseline = 'middle';
         this.context.fillText(this.scoreLeft + ' - ' + this.scoreRight, this.width / 2, 50);
