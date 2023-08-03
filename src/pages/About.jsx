@@ -196,7 +196,7 @@ const About = () => {
       <div className="flex flex-col items-center justify-center items-center mt-24 mb-24">
         <canvas
           ref={canvasRef}
-          className={`w-1/2 aspect-video border rounded ${
+          className={`w-[95%] md:w-1/2 aspect-video border rounded ${
             isDarkMode ? 'border-white' : 'border-black'
           }`}
           data-fill-color={isDarkMode ? 'text-white' : 'text-black'}
