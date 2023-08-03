@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { InView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
+import selfPortrait from '/src/assets/images/Self-Portrait.jpeg';
 
 const Home = () => {
   return (
@@ -49,7 +50,7 @@ const Home = () => {
               }`}
             >
               <img
-                src="../src/assets/images/Self-Portrait.jpeg"
+                src={selfPortrait}
                 alt="Brian Foley"
                 className="w-3/4 md:w-1/2 aspect-square rounded-full"
               />

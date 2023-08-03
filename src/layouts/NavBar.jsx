@@ -2,6 +2,8 @@
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { DarkModeContext } from '../context/DarkModeContext';
+import darkModeLogo from '/src/assets/logos/main-dark-mode.png';
+import lightModeLogo from '/src/assets/logos/main-light-mode.png';
 
 const NavBar = () => {
   const { isDarkMode, setDarkMode } = useContext(DarkModeContext);
@@ -18,11 +20,7 @@ const NavBar = () => {
         className="text-2xl font-bold h-full ml-2 md:ml-8 mb-4 md:mb-0 flex justify-center"
       >
         <img
-          src={
-            isDarkMode
-              ? '../src/assets/logos/main-dark-mode.png'
-              : '../src/assets/logos/main-light-mode.png'
-          }
+          src={isDarkMode ? darkModeLogo : lightModeLogo}
           alt="Logo"
           className="object-contain h-full md:w-auto w-1/2 ml-2"
         />{' '}

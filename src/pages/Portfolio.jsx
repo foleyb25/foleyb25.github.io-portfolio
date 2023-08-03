@@ -2,6 +2,10 @@ import { useContext } from 'react';
 import { DarkModeContext } from '../context/DarkModeContext';
 import backgroundImageNight from '/src/assets/images/city-landscape-night-min.png';
 import backgroundImageDay from '/src/assets/images/city-landscape-day-min.png';
+import ATG_80s_Logo from '/src/assets/images/ATG_80s_logo.png';
+import ATG_writer_logo from '/src/assets/images/ATG_Writer_logo_16x9.png';
+import ATG_API_logo from '/src/assets/images/code_on_computer_screen-min.png';
+import barguments_logo from '/src/assets/images/Barguments_logo_16x9.png';
 
 const Portfolio = () => {
   const { isDarkMode } = useContext(DarkModeContext);
@@ -11,7 +15,7 @@ const Portfolio = () => {
       title: 'All Things Great',
       description:
         'When Satire meets information, you are given All Things Great. A blogging site covering various topics with an emphasis on satire and humor.',
-      image: '../src/assets/images/ATG_80s_logo.png',
+      image: ATG_80s_Logo,
       technologies: ['Vue', 'Vercel', 'Tailwind CSS', 'Pinia'],
       link: 'https://allthingsgreat.com', // live project link
       code: '', // source code link
@@ -20,7 +24,7 @@ const Portfolio = () => {
       title: 'All Things Great Writer',
       description:
         'Writer platform for All Things Great empowering writers to create innovative content.',
-      image: '../src/assets/images/ATG_Writer_logo_16x9.png',
+      image: ATG_writer_logo,
       technologies: [
         'Vue',
         'Github Pages',
@@ -35,7 +39,7 @@ const Portfolio = () => {
       title: 'All Things Great API',
       description:
         'Writer platform for All Things Great empowering writers to create innovative content.',
-      image: '../src/assets/images/code_on_computer_screen-min.png',
+      image: ATG_API_logo,
       technologies: [
         'Vue',
         'Github Pages',
@@ -50,7 +54,7 @@ const Portfolio = () => {
       title: 'Barguments',
       description:
         'Writer platform for All Things Great empowering writers to create innovative content.',
-      image: '../src/assets/images/Barguments_logo_16x9.png',
+      image: barguments_logo,
       technologies: ['Swift', 'OpenAI', 'Tailwind CSS'],
       link: 'https://apps.apple.com/us/app/barguments/id6450323880', // live project link
       code: 'https://github.com/foleyb25/Barguments-iOS', // source code link
