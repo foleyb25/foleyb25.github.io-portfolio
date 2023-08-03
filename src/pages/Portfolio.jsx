@@ -1,12 +1,10 @@
 import { useContext } from 'react';
 import { DarkModeContext } from '../context/DarkModeContext';
+import backgroundImageNight from '/src/assets/images/city-landscape-night-min.png';
+import backgroundImageDay from '/src/assets/images/city-landscape-day-min.png';
 
 const Portfolio = () => {
   const { isDarkMode } = useContext(DarkModeContext);
-  const backgroundImagePathNight =
-    '../src/assets/images/city-landscape-night-min.png';
-  const backgroundImagePathDay =
-    '../src/assets/images/city-landscape-day-min.png';
 
   const projects = [
     {
@@ -67,7 +65,7 @@ const Portfolio = () => {
         className="w-full h-96 bg-cover bg-center"
         style={{
           backgroundImage: `url(${
-            isDarkMode ? backgroundImagePathNight : backgroundImagePathDay
+            isDarkMode ? backgroundImageNight : backgroundImageDay
           })`,
         }}
       />

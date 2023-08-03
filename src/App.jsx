@@ -1,5 +1,5 @@
 // App.jsx
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import Routes from './routes';
 import Nav from './layouts/NavBar';
 import { library } from '@fortawesome/fontawesome-svg-core';

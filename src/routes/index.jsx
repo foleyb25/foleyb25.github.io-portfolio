@@ -1,6 +1,5 @@
 import { useContext, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { Route, Routes } from 'react-router-dom';
+import { useLocation, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Portfolio from '../pages/Portfolio';
@@ -42,7 +41,7 @@ const RoutesComponent = () => {
       <Route path="/about" element={<About />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/blog" element={<Blog />} />
-      <Route path="/" element={<Home />} />
+      <Route exact path="/" element={<Home />} />
     </Routes>
   );
 };

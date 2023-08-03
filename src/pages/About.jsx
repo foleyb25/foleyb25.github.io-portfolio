@@ -3,15 +3,13 @@ import { Pong } from '../games/pong';
 import { useContext } from 'react';
 import { DarkModeContext } from '../context/DarkModeContext';
 import ProjectCard from '../components/ProjectCard';
+import backgroundImageDay from '/src/assets/images/outdoor-arcade-day-min.png';
+import backgroundImageNight from '/src/assets/images/indoor-arcade-night-min.png';
 
 const About = () => {
   const { isDarkMode } = useContext(DarkModeContext);
   const canvasRef = useRef(null);
   const pong = useRef(null);
-  const backgroundImagePathNight =
-    '../src/assets/images/indoor-arcade-night-min.png';
-  const backgroundImagePathDay =
-    '../src/assets/images/outdoor-arcade-day-min.png';
 
   const gameItems = [
     {
@@ -178,7 +176,7 @@ const About = () => {
         className="w-full h-96 bg-cover bg-center"
         style={{
           backgroundImage: `url(${
-            isDarkMode ? backgroundImagePathNight : backgroundImagePathDay
+            isDarkMode ? backgroundImageNight : backgroundImageDay
           })`,
         }}
       />
