@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { InView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
-import selfPortrait from '/src/assets/images/Self-Portrait.jpeg';
+import selfPortrait from '/src/assets/images/Self-Portrait.webp';
 
 const Home = () => {
   return (
     <div className="bg-primary text-primary min-h-screen">
-      <section className="flex flex-col md:flex-row bg-[url(../src/assets/images/desert_planet_landscape-day-min.png)] dark:bg-[url(../src/assets/images/desert_planet_landscape-night-min.png)] justify-center items-center min-h-screen px-8 py-16 bg-cover">
+      <section className="flex flex-col md:flex-row bg-[url(../src/assets/images/desert_planet_landscape-day-min.webp)] dark:bg-[url(../src/assets/images/desert_planet_landscape-night-min.webp)] justify-center items-center min-h-screen px-8 py-16 bg-cover">
         <InView triggerOnce>
           {({ inView, ref }) => (
             <div

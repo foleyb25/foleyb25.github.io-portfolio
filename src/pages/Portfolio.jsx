@@ -1,11 +1,11 @@
 import { useContext } from 'react';
 import { DarkModeContext } from '../context/DarkModeContext';
-import backgroundImageNight from '/src/assets/images/city-landscape-night-min.png';
-import backgroundImageDay from '/src/assets/images/city-landscape-day-min.png';
-import ATG_80s_Logo from '/src/assets/images/ATG_80s_logo.png';
-import ATG_writer_logo from '/src/assets/images/ATG_Writer_logo_16x9.png';
-import ATG_API_logo from '/src/assets/images/code_on_computer_screen-min.png';
-import barguments_logo from '/src/assets/images/Barguments_logo_16x9.png';
+import backgroundImageNight from '/src/assets/images/city-landscape-night-min.webp';
+import backgroundImageDay from '/src/assets/images/city-landscape-day-min.webp';
+import ATG_80s_Logo from '/src/assets/images/ATG_80s_logo.webp';
+import ATG_writer_logo from '/src/assets/images/ATG_Writer_logo_16x9.webp';
+import ATG_API_logo from '/src/assets/images/code_on_computer_screen-min.webp';
+import barguments_logo from '/src/assets/images/Barguments_logo_16x9.webp';
 
 const Portfolio = () => {
   const { isDarkMode } = useContext(DarkModeContext);
@@ -55,7 +55,7 @@ const Portfolio = () => {
       description:
         'Writer platform for All Things Great empowering writers to create innovative content.',
       image: barguments_logo,
-      technologies: ['Swift', 'OpenAI', 'Tailwind CSS'],
+      technologies: ['Swift'],
       link: 'https://apps.apple.com/us/app/barguments/id6450323880', // live project link
       code: 'https://github.com/foleyb25/Barguments-iOS', // source code link
     },

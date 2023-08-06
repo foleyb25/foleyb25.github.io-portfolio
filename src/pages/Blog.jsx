@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { DarkModeContext } from '../context/DarkModeContext';
-import backgroundImageDay from '/src/assets/images/AI-future-day-min.png';
-import backgroundImageNight from '/src/assets/images/AI-future-night-min.png';
+import backgroundImageDay from '/src/assets/images/AI-future-day-min.webp';
+import backgroundImageNight from '/src/assets/images/AI-future-night-min.webp';
 
 const Blog = () => {
   const { isDarkMode } = useContext(DarkModeContext);

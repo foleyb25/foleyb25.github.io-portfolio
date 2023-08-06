@@ -3,8 +3,8 @@ import { Pong } from '../games/pong';
 import { useContext } from 'react';
 import { DarkModeContext } from '../context/DarkModeContext';
 import ProjectCard from '../components/ProjectCard';
-import backgroundImageDay from '/src/assets/images/outdoor-arcade-day-min.png';
-import backgroundImageNight from '/src/assets/images/indoor-arcade-night-min.png';
+import backgroundImageDay from '/src/assets/images/outdoor-arcade-day-min.webp';
+import backgroundImageNight from '/src/assets/images/indoor-arcade-night-min.webp';
 
 const About = () => {
   const { isDarkMode } = useContext(DarkModeContext);
