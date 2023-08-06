@@ -226,7 +226,7 @@ const About = () => {
           <div className="w-full md:w-1/2 flex justify-center items-center">
             <div className="w-64 h-64 overflow-hidden rounded-full">
               <img
-                src="../src/assets/images/AI-future-day-min.png"
+                src="../src/assets/images/AI-future-day-min.webp"
                 alt=""
                 className="object-cover h-full"
               />
@@ -250,7 +250,7 @@ const About = () => {
           <div className="w-full md:w-1/2 flex justify-center items-center">
             <div className="w-64 h-64 overflow-hidden rounded-full">
               <img
-                src="../src/assets/images/AI-future-day-min.png"
+                src="../src/assets/images/AI-future-day-min.webp"
                 alt=""
                 className="object-cover h-full"
               />
@@ -273,7 +273,7 @@ const About = () => {
           <div className="w-full md:w-1/2 flex justify-center items-center">
             <div className="w-64 h-64 overflow-hidden rounded-full">
               <img
-                src="../src/assets/images/AI-future-day-min.png"
+                src="../src/assets/images/AI-future-day-min.webp"
                 alt=""
                 className="object-cover h-full"
               />
