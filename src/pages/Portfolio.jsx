@@ -21,6 +21,15 @@ const Portfolio = () => {
       code: '', // source code link
     },
     {
+      title: 'Barguments',
+      description:
+        'Writer platform for All Things Great empowering writers to create innovative content.',
+      image: barguments_logo,
+      technologies: ['Swift'],
+      link: 'https://apps.apple.com/us/app/barguments/id6450323880', // live project link
+      code: 'https://github.com/foleyb25/Barguments-iOS', // source code link
+    },
+    {
       title: 'All Things Great Writer',
       description:
         'Writer platform for All Things Great empowering writers to create innovative content.',
@@ -32,7 +41,7 @@ const Portfolio = () => {
         'Tailwind CSS',
         'MongoDB',
       ],
-      link: 'https://allthingsgreatwriter.app', // live project link
+      link: '', // live project link
       code: '', // source code link
     },
     {
@@ -46,20 +55,13 @@ const Portfolio = () => {
         'Github Actions',
         'Tailwind CSS',
         'MongoDB',
+        'Data Scraping',
+        'Amazon S3',
+        'ExpressJS',
       ],
       link: '', // live project link
       code: '', // source code link
     },
-    {
-      title: 'Barguments',
-      description:
-        'Writer platform for All Things Great empowering writers to create innovative content.',
-      image: barguments_logo,
-      technologies: ['Swift'],
-      link: 'https://apps.apple.com/us/app/barguments/id6450323880', // live project link
-      code: 'https://github.com/foleyb25/Barguments-iOS', // source code link
-    },
-    // more project objects here...
   ];
 
   return (
@@ -104,14 +106,19 @@ const Portfolio = () => {
                 ))}
               </div>
               <div className="px-6 pt-4 pb-2 flex justify-between">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-accent-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                >
-                  See More
-                </a>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-accent-primary text-white font-bold py-2 px-4 rounded"
+                  >
+                    See More
+                  </a>
+                ) : (
+                  <p className="font-bold py-2 px-4">Not Available</p>
+                )}
+
                 {project.code ? (
                   <a
                     href={project.code}

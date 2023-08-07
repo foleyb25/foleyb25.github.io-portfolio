@@ -11,6 +11,83 @@ const About = () => {
   const canvasRef = useRef(null);
   const pong = useRef(null);
 
+  const ActivitySection = ({
+    title,
+    text,
+    imageUrl,
+    reverse = false,
+    primary = true,
+  }) => (
+    <div
+      className={`flex flex-col ${
+        reverse ? 'md:flex-row-reverse' : 'md:flex-row'
+      } ${primary ? 'bg-primary-accent' : 'bg-secondary-accent'} text-center`}
+    >
+      <div className="w-full md:w-1/2 p-4">
+        <h1 className="text-2xl">{title}</h1>
+        <p>{text}</p>
+      </div>
+      <div className="w-full md:w-1/2 flex justify-center items-center">
+        <div className="w-64 h-64 overflow-hidden rounded-full">
+          <img src={imageUrl} alt={title} className="object-cover h-full" />
+        </div>
+      </div>
+    </div>
+  );
+
+  const activities = [
+    {
+      title: 'Running',
+      text: `I used to not like running, absolutely despised it. It wasn't
+      until one day in 2019 I heard about David Goggins running a 135
+      mile ultra-marathon in the middle of Death Valley, CA. I thought, if
+      he could do that I could at least run a half marathon. From there,
+      I went on to run a pair of full marathons and three half-marathons. 
+      This newfound passion for running has changed my life
+      in the most positive way imaginable.`,
+      imageUrl: '../src/assets/images/half_marathon.png',
+      reverse: false,
+      primary: true,
+    },
+    {
+      title: 'Dirtbike Riding',
+      text: `That's not actually me in this picture but it would be pretty cool
+      if it was. It's actually using Midjourney in it's finest form. 
+      In my early days of riding, I had tied on my Thorogood
+      boots and would do casual rides from Montana City to Clancy,
+      nothing too serious. In the summer of 2023, I reconnected with an
+      old friend who is big into riding and we started to do more
+      technical trails in the mountains. I said goodbye to my riding
+      days with the Thorogood boots, and hello to a new back country
+      adventure.`,
+      imageUrl: '../src/assets/images/dirtbike_firepit.webp',
+      reverse: true,
+      primary: false,
+    },
+    {
+      title: 'Beer League Hockey',
+      text: `I'm adding pond hockey to this one as well. I bought my first pair
+      of skates while on home for leave in the winter of 2014. My friend
+      group and I went out for a night of drinking and woke up the next
+      morning to skate at the local park in Helena, Montana. I learned
+      to skate with a massive hangover and some liquid courage.`,
+      imageUrl: '../src/assets/images/beer_league.jpg',
+      reverse: false,
+      primary: true,
+    },
+    {
+      title: 'Golfing',
+      text: `For my summer job in college I worked Grounds Crew at a country club 
+        in Bozeman, MT. With free golf as a perk, I was able to hone my skills
+        and take on a new hobby. Fun fact: I hit my irons/driver left handed but
+        putt right handed...I also putt like Happy Gilmore.`,
+      imageUrl: '../src/assets/images/golf.jpg',
+      reverse: true,
+      primary: false,
+    },
+    // ... add more activities as needed
+  ];
+
   const gameItems = [
     {
       name: 'Secret of Mana',
@@ -207,81 +284,17 @@ const About = () => {
         </p>
       </div>
 
-      {/* Grid layout below the banner */}
       <div className="grid gap-24 p-4">
-        <div className="flex flex-col md:flex-row bg-primary-accent text-center">
-          <div className="w-full md:w-1/2 p-4">
-            <h1 className="text-2xl">Running</h1>
-            <p>
-              I used to not like running, absolutely despised it. It wasn't
-              until one day in 2019 I heard about David Goggins running a 135
-              mile ultra-marathon in the middle of death valley. I thought, if
-              he could do that I could at least run a half marathon. From there,
-              I went on to run 3nd a pair more half marathons aof full
-              marathons. This newfound passion for running has changed my life
-              in the most positive way imaginable.
-            </p>
-            {/* Insert more text here */}
-          </div>
-          <div className="w-full md:w-1/2 flex justify-center items-center">
-            <div className="w-64 h-64 overflow-hidden rounded-full">
-              <img
-                src="../src/assets/images/AI-future-day-min.webp"
-                alt=""
-                className="object-cover h-full"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row-reverse bg-secondary-accent">
-          <div className="w-full md:w-1/2 p-4 text-center">
-            <h1 className="text-2xl">Dirbike Riding</h1>
-            <p>
-              Before, I had tied on my Thorogood boots and would do casual rides
-              from Montana City to Clancy, nothing too serious. In the summer of
-              2023, I reconnected with an old childhood friend who is big into
-              riding and we started to do more technical trails in the
-              mountains. I said goodbye to my riding days with the Thorogood
-              boots, and hello to a new back country adventure.
-            </p>
-            {/* Insert more text here */}
-          </div>
-          <div className="w-full md:w-1/2 flex justify-center items-center">
-            <div className="w-64 h-64 overflow-hidden rounded-full">
-              <img
-                src="../src/assets/images/AI-future-day-min.webp"
-                alt=""
-                className="object-cover h-full"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row bg-primary-accent text-center">
-          <div className="w-full md:w-1/2 p-4">
-            <h1 className="text-2xl">Beer League Hockey</h1>
-            <p>
-              I'm adding pond hockey to this one as well. I bought my first pair
-              of skates while on home for leave in the winter of 2014. My friend
-              group and I went out for a night of drinking and woke up the next
-              morning to skate at the local park in Helena, Montana. I learned
-              to skate with a massive hangover and some liquid courage.
-            </p>
-            {/* Insert more text here */}
-          </div>
-          <div className="w-full md:w-1/2 flex justify-center items-center">
-            <div className="w-64 h-64 overflow-hidden rounded-full">
-              <img
-                src="../src/assets/images/AI-future-day-min.webp"
-                alt=""
-                className="object-cover h-full"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Add more sections as needed */}
+        {activities.map((activity, index) => (
+          <ActivitySection
+            key={index}
+            title={activity.title}
+            text={activity.text}
+            imageUrl={activity.imageUrl}
+            reverse={activity.reverse}
+            primary={activity.primary}
+          />
+        ))}
       </div>
     </div>
   );
