@@ -14,7 +14,7 @@ const Portfolio = () => {
     {
       title: 'All Things Great',
       description:
-        'When Satire meets information, you are given All Things Great. A blogging site covering various topics with an emphasis on satire and humor.',
+        'When satire meets modern news, you are given All Things Great. A blogging site covering various topics with an emphasis on satire and humor.',
       image: ATG_80s_Logo,
       technologies: ['Vue', 'Vercel', 'Tailwind CSS', 'Pinia'],
       link: 'https://allthingsgreat.com', // live project link
@@ -23,7 +23,7 @@ const Portfolio = () => {
     {
       title: 'Barguments',
       description:
-        'Writer platform for All Things Great empowering writers to create innovative content.',
+        'Have you ever felt like arguing about completely irrelevant topics? Well, I present to you Barguments. Wager bets with your friends and family to determine the best Barguer.',
       image: barguments_logo,
       technologies: ['Swift'],
       link: 'https://apps.apple.com/us/app/barguments/id6450323880', // live project link
@@ -47,7 +47,7 @@ const Portfolio = () => {
     {
       title: 'All Things Great API',
       description:
-        'Writer platform for All Things Great empowering writers to create innovative content.',
+        "The brains behind All Things Great. Handling operations pertaining to OpenAI's API, data scraping, image uploading, database calls, and much more.",
       image: ATG_API_logo,
       technologies: [
         'Vue',
@@ -76,7 +76,7 @@ const Portfolio = () => {
         }}
       />
 
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto p-4 md:px-8">
         <h1 className="text-4xl mb-8">My Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project, index) => (

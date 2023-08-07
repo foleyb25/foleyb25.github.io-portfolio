@@ -1,9 +1,14 @@
 import { blogs } from '/src/blogs/blog.js';
 import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const BlogView = () => {
   const { id } = useParams();
   const blog = blogs.find(b => b.id === Number(id));
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   if (!blog) return <div className="p-8 text-xl font-bold">Blog not found</div>;
 

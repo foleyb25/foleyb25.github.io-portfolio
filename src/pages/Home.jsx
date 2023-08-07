@@ -23,12 +23,6 @@ const Home = () => {
                   Delivering dynamic web experiences with the power of modern
                   tech stacks
                 </h3>
-                <p className="text-base md:text-lg my-4 text-center drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.8)] dark:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-bold">
-                  A full-stack web engineer specializing in MEV/RN stack with
-                  over 2 years of experience. Committed to delivering
-                  high-quality, user-friendly applications for a dynamic web
-                  experience.
-                </p>
 
                 <Link
                   to="/portfolio"

@@ -5,6 +5,10 @@ import { DarkModeContext } from '../context/DarkModeContext';
 import ProjectCard from '../components/ProjectCard';
 import backgroundImageDay from '/src/assets/images/outdoor-arcade-day-min.webp';
 import backgroundImageNight from '/src/assets/images/indoor-arcade-night-min.webp';
+import halfMarathonImage from '/src/assets/images/half_marathon.png';
+import dirtbikeFirePitImage from '/src/assets/images/dirtbike_firepit.webp';
+import beerLeagueImage from '/src/assets/images/beer_league.jpg';
+import golfImage from '/src/assets/images/golf.jpg';
 
 const About = () => {
   const { isDarkMode } = useContext(DarkModeContext);
@@ -45,7 +49,7 @@ const About = () => {
       I went on to run a pair of full marathons and three half-marathons. 
       This newfound passion for running has changed my life
       in the most positive way imaginable.`,
-      imageUrl: '../src/assets/images/half_marathon.png',
+      imageUrl: halfMarathonImage,
       reverse: false,
       primary: true,
     },
@@ -60,7 +64,7 @@ const About = () => {
       technical trails in the mountains. I said goodbye to my riding
       days with the Thorogood boots, and hello to a new back country
       adventure.`,
-      imageUrl: '../src/assets/images/dirtbike_firepit.webp',
+      imageUrl: dirtbikeFirePitImage,
       reverse: true,
       primary: false,
     },
@@ -71,7 +75,7 @@ const About = () => {
       group and I went out for a night of drinking and woke up the next
       morning to skate at the local park in Helena, Montana. I learned
       to skate with a massive hangover and some liquid courage.`,
-      imageUrl: '../src/assets/images/beer_league.jpg',
+      imageUrl: beerLeagueImage,
       reverse: false,
       primary: true,
     },
@@ -81,7 +85,7 @@ const About = () => {
         in Bozeman, MT. With free golf as a perk, I was able to hone my skills
         and take on a new hobby. Fun fact: I hit my irons/driver left handed but
         putt right handed...I also putt like Happy Gilmore.`,
-      imageUrl: '../src/assets/images/golf.jpg',
+      imageUrl: golfImage,
       reverse: true,
       primary: false,
     },

@@ -29,7 +29,7 @@ const Blog = () => {
         }}
       />
       <div className="p-8">
-        <h1 className="text-2xl font-bold mb-4">Blog</h1>
+        <h1 className="text-2xl font-bold mb-4">Blogs</h1>
         {blogs.length > 0 ? (
           <div className={`grid md:${gridCols} grid-cols-1 gap-4`}>
             {blogs.map(blog => (
