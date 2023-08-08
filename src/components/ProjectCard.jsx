@@ -19,9 +19,9 @@ const ProjectCard = ({ name, items }) => {
   };
 
   return (
-    <div className="p-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+    <div className="p-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/4 mb-8 ">
       <div className={`card ${isFlipped ? 'flipped' : ''}`}>
-        <div className="face h-full w-full front border rounded shadow-md p-4 overflow-auto">
+        <div className="face h-full w-full front border rounded shadow-md p-4 overflow-hidden">
           <button
             className="w-full h-full flex items-center justify-center text-xl font-bold"
             onClick={handleClick}
