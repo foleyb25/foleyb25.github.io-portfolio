@@ -96,32 +96,27 @@ const About = () => {
     {
       name: 'Secret of Mana',
       info: '',
-      img:
-        'https://cdn.mobygames.com/0f33ad74-aba6-11ed-aaf5-02420a00019c.webp',
+      img: 'https://cdn.mobygames.com/0f33ad74-aba6-11ed-aaf5-02420a00019c.webp',
     },
     {
       name: 'Zelda: A Link to the Past',
       info: '',
-      img:
-        'https://cdn.mobygames.com/ed7fd308-aba3-11ed-8bb9-02420a000197.webp',
+      img: 'https://cdn.mobygames.com/ed7fd308-aba3-11ed-8bb9-02420a000197.webp',
     },
     {
       name: 'Super Mario World',
       info: '',
-      img:
-        'https://cdn.mobygames.com/f8ea49cc-abbb-11ed-9ae2-02420a0001a0.webp',
+      img: 'https://cdn.mobygames.com/f8ea49cc-abbb-11ed-9ae2-02420a0001a0.webp',
     },
     {
       name: 'Donkey Kong Country',
       info: '',
-      img:
-        'https://cdn.mobygames.com/09e76136-aba5-11ed-9e18-02420a00019a.webp',
+      img: 'https://cdn.mobygames.com/09e76136-aba5-11ed-9e18-02420a00019a.webp',
     },
     {
       name: 'Super Star Wars',
       info: '',
-      img:
-        'https://cdn.mobygames.com/07ce1c5e-aba6-11ed-b165-02420a000198.webp',
+      img: 'https://cdn.mobygames.com/07ce1c5e-aba6-11ed-b165-02420a000198.webp',
     },
   ];
 
@@ -129,32 +124,27 @@ const About = () => {
     {
       name: 'Stand By Me',
       info: '',
-      img:
-        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg',
+      img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg',
     },
     {
       name: 'Blow',
       info: '',
-      img:
-        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yYZFVfk8aeMP4GxBSU9MTvqs9mJ.jpg',
+      img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yYZFVfk8aeMP4GxBSU9MTvqs9mJ.jpg',
     },
     {
       name: 'Star Wars Episode III',
       info: '',
-      img:
-        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg',
+      img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg',
     },
     {
       name: 'LOTR: Return of the King',
       info: '',
-      img:
-        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg',
+      img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg',
     },
     {
       name: 'Forrest Gump',
       info: '',
-      img:
-        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg',
+      img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg',
     },
   ];
 
@@ -162,32 +152,27 @@ const About = () => {
     {
       name: 'Band of Brothers',
       info: '',
-      img:
-        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bF0o2cJFVM4JPIOTc4GVMho7fkj.jpg',
+      img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bF0o2cJFVM4JPIOTc4GVMho7fkj.jpg',
     },
     {
       name: 'Seinfeld',
       info: '',
-      img:
-        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg',
+      img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg',
     },
     {
       name: 'Boy Meets World',
       info: '',
-      img:
-        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/75a5z9zkh8Rg5lnmWlpEQ2V8rVT.jpg',
+      img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/75a5z9zkh8Rg5lnmWlpEQ2V8rVT.jpg',
     },
     {
       name: 'Ozark',
       info: '',
-      img:
-        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/m73bD8VjibSKuTWg597GQVyVhSb.jpg',
+      img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/m73bD8VjibSKuTWg597GQVyVhSb.jpg',
     },
     {
       name: 'Game of Thrones',
       info: '',
-      img:
-        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg',
+      img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg',
     },
   ];
 
@@ -200,34 +185,30 @@ const About = () => {
     {
       name: 'College Football Saturdays',
       info: '',
-      img:
-        'https://upload.wikimedia.org/wikipedia/en/d/dd/2015_ESPN_College_GameDay_logo.png',
+      img: 'https://upload.wikimedia.org/wikipedia/en/d/dd/2015_ESPN_College_GameDay_logo.png',
     },
     {
       name: 'NFL Sundays',
       info: '',
-      img:
-        'https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png',
+      img: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png',
     },
     {
       name: 'NHL Playoffs',
       info: '',
-      img:
-        'https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/05_NHL_Shield.svg/640px-05_NHL_Shield.svg.png',
+      img: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/05_NHL_Shield.svg/640px-05_NHL_Shield.svg.png',
     },
     {
       name: 'NBA Playoffs',
       info: '',
-      img:
-        'https://w7.pngwing.com/pngs/292/377/png-transparent-nba-logo-2017u201318-nba-season-los-angeles-lakers-brooklyn-nets-logo-basketball-nba-background-blue-text-trademark-thumbnail.png',
+      img: 'https://w7.pngwing.com/pngs/292/377/png-transparent-nba-logo-2017u201318-nba-season-los-angeles-lakers-brooklyn-nets-logo-basketball-nba-background-blue-text-trademark-thumbnail.png',
     },
   ];
 
   const allItems = [];
-  allItems.push({ name: 'Top SNES Games', items: gameItems });
+  allItems.push({ name: 'Top Sporting Events', items: sportingEvents });
   allItems.push({ name: 'Top Movies', items: movieItems });
   allItems.push({ name: 'Top TV Shows', items: tvItems });
-  allItems.push({ name: 'Top Sporting Events', items: sportingEvents });
+  allItems.push({ name: 'Top SNES Games', items: gameItems });
 
   useEffect(() => {
     // Set the canvas dimensions

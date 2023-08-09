@@ -1,3 +1,27 @@
+.item-enter {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 500ms ease-out, opacity 500ms;
+}
+
+.item-enter-active {
+  max-height: 10rem; /* Adjust this value to fit your content */
+  opacity: 1;
+}
+
+.item-exit {
+  max-height: 10rem; /* Same height as expanded content */
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 500ms ease-in, opacity 500ms;
+}
+
+.item-exit-active {
+  max-height: 0;
+  opacity: 0;
+}
+
 .card {
   position: relative;
   width: 100%;
