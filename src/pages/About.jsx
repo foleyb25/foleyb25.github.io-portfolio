@@ -180,7 +180,7 @@ const About = () => {
     {
       name: 'UFC Events',
       info: '',
-      img: 'https://www.rockawave.com/wp-content/uploads/2021/11/UFC-LOGO.png',
+      img: 'https://www.cdnlogo.com/logos/u/57/ufc.svg',
     },
     {
       name: 'College Football Saturdays',
@@ -190,17 +190,17 @@ const About = () => {
     {
       name: 'NFL Sundays',
       info: '',
-      img: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png',
+      img: 'https://www.cdnlogo.com/logos/n/56/nfl.svg',
     },
     {
       name: 'NHL Playoffs',
       info: '',
-      img: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/05_NHL_Shield.svg/640px-05_NHL_Shield.svg.png',
+      img: 'https://www.cdnlogo.com/logos/n/20/nhl.svg',
     },
     {
       name: 'NBA Playoffs',
       info: '',
-      img: 'https://w7.pngwing.com/pngs/292/377/png-transparent-nba-logo-2017u201318-nba-season-los-angeles-lakers-brooklyn-nets-logo-basketball-nba-background-blue-text-trademark-thumbnail.png',
+      img: 'https://www.cdnlogo.com/logos/n/54/nba.svg',
     },
   ];
 

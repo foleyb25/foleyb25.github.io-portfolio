@@ -27,7 +27,7 @@ const DropdownItem = ({ item, activeItem, onClick }) => {
           <img
             src={item.img}
             alt={item.name}
-            className="w-auto h-32 object-fit mt-2"
+            className="w-auto h-32 object-fit mt-2 rounded"
           />
           {item.info}
         </div>
