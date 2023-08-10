@@ -60,11 +60,12 @@ const Home = () => {
                 alt="Brian Foley"
                 className="w-3/4 md:w-1/2 aspect-square rounded-full shadow-sm isolate"
               />
-              <div className="mt-4 flex gap-4 backdrop-blur-lg p-[20px] rounded-xl">
+              <div className="mt-4 flex backdrop-blur-lg p-[20px] rounded-xl">
                 <a
                   href="https://github.com/foleyb25"
                   target="_blank"
                   rel="noreferrer"
+                  className="mr-4" // Added margin-right
                 >
                   <FontAwesomeIcon
                     icon={['fab', 'github']}
