@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom';
 import selfPortrait from '/src/assets/images/Self-Portrait.webp';
 import { useContext } from 'react';
 import { DarkModeContext } from '../context/DarkModeContext';
-const backgroundImageNight =
-  '/src/assets/images/desert_planet_landscape-night-min.webp';
-const backgroundImageDay =
-  '/src/assets/images/desert_planet_landscape-day-min.webp';
+import backgroundImageNight from '/src/assets/images/desert_planet_landscape-night-min.webp';
+import backgroundImageDay from '/src/assets/images/desert_planet_landscape-day-min.webp';
 
 const Home = () => {
   const { isDarkMode } = useContext(DarkModeContext);
