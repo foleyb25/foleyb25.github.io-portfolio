@@ -5,10 +5,10 @@ import { DarkModeContext } from '../context/DarkModeContext';
 import ProjectCard from '../components/ProjectCard';
 import backgroundImageDay from '/src/assets/images/outdoor-arcade-day-min.webp';
 import backgroundImageNight from '/src/assets/images/indoor-arcade-night-min.webp';
-import halfMarathonImage from '/src/assets/images/half_marathon.png';
+import halfMarathonImage from '/src/assets/images/half_marathon.webp';
 import dirtbikeFirePitImage from '/src/assets/images/dirtbike_firepit.webp';
-import beerLeagueImage from '/src/assets/images/beer_league.jpg';
-import golfImage from '/src/assets/images/golf.jpg';
+import beerLeagueImage from '/src/assets/images/beer_league.webp';
+import golfImage from '/src/assets/images/golf.webp';
 
 const About = () => {
   const { isDarkMode } = useContext(DarkModeContext);

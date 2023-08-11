@@ -13,6 +13,12 @@ const NavBar = () => {
     setDarkMode(!isDarkMode);
   };
 
+  const links = [
+    { linkName: 'Home', path: '/' },
+    { linkName: 'About', path: '/about' },
+    { linkName: 'Portfolio', path: '/portfolio' },
+  ];
+
   return (
     <nav className="bg-primary text-primary flex flex-col md:flex-row justify-between items-center py-4 w-full h-auto md:h-24">
       <Link
@@ -28,22 +34,15 @@ const NavBar = () => {
       </Link>
       <div className="mr-2 md:mr-8 flex items-center justify-between">
         <div>
-          <Link to="/" className="px-2">
-            Home
-          </Link>
-          <Link to="/about" className="px-2">
-            About
-          </Link>
-          <Link to="/portfolio" className="px-2">
-            Portfolio
-          </Link>
-          <Link to="/blog" className="px-2">
-            Blog
-          </Link>
+          {links.map((link, i) => (
+            <Link key={i} to={link.path} className="px-2">
+              {link.linkName}
+            </Link>
+          ))}
         </div>
         <button
           onClick={toggleDarkMode}
-          className="px-2 md:ml-8 bg-transparent hover:bg-transparent"
+          className="py-1 px-2 md:ml-8 bg-black border border-white rounded hover:bg-gray-500"
         >
           {isDarkMode ? '🌞' : '🌙'}
         </button>
