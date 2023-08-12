@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { InView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import selfPortrait from '/src/assets/images/Self-Portrait.webp';
@@ -60,29 +59,6 @@ const Home = () => {
                 alt="Brian Foley"
                 className="w-3/4 md:w-1/2 aspect-square rounded-full shadow-sm isolate"
               />
-              <div className="mt-4 flex backdrop-blur-lg p-[20px] rounded-xl">
-                <a
-                  href="https://github.com/foleyb25"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mr-4" // Added margin-right
-                >
-                  <FontAwesomeIcon
-                    icon={['fab', 'github']}
-                    className="text-2xl"
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/brian-foley-456624196/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={['fab', 'linkedin']}
-                    className="text-2xl"
-                  />
-                </a>
-              </div>
             </div>
           )}
         </InView>
