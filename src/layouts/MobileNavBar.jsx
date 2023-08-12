@@ -79,7 +79,7 @@ const MobileNavBar = () => {
             </button>
           </div>
           <div className="flex flex-col items-center justify-end flex-1">
-            <div className="mb-8">
+            <div className="mb-16">
               <a
                 href="https://github.com/foleyb25"
                 target="_blank"
@@ -88,7 +88,7 @@ const MobileNavBar = () => {
               >
                 <FontAwesomeIcon
                   icon={['fab', 'github']}
-                  className="text-2xl"
+                  className="text-4xl"
                 />
               </a>
               <a
@@ -98,7 +98,7 @@ const MobileNavBar = () => {
               >
                 <FontAwesomeIcon
                   icon={['fab', 'linkedin']}
-                  className="text-2xl"
+                  className="text-4xl"
                 />
               </a>
             </div>
