@@ -79,7 +79,7 @@ const MobileNavBar = () => {
             </button>
           </div>
           <div className="flex flex-col items-center justify-end flex-1">
-            <div className="mb-16">
+            <div className="mb-20">
               <a
                 href="https://github.com/foleyb25"
                 target="_blank"
