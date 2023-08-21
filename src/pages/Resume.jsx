@@ -272,7 +272,7 @@ const Resume = () => {
       >
         <div
           id="name-image-combobox"
-          className="w-full flex flex-row bg-gray-900 p-8 h-[250px]"
+          className="w-full flex flex-row bg-gray-900 p-8"
         >
           <div id="name-box" className="w-[60%]">
             <h1 className="text-white text-xl md:text-5xl font-bold ">
@@ -306,7 +306,7 @@ const Resume = () => {
                 id="selfPortrait"
                 src="https://allthingsgreat.s3.us-west-2.amazonaws.com/Self-Portrait.webp"
                 alt="Brian Foley Self Portrait"
-                className="border border-black rounded-full"
+                className="border border-black rounded-full h-[24vw]"
               />
             </div>
           </div>
