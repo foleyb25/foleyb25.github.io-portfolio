@@ -275,11 +275,9 @@ const Resume = () => {
           className="w-full flex flex-row bg-gray-900 p-8"
         >
           <div id="name-box" className="w-[60%]">
-            <h1 className="text-white text-xl sm:text-5xl font-bold ">
-              Brian C. Foley
-            </h1>
+            <h1 className="text-white text-[5vw] font-bold ">Brian C. Foley</h1>
             <div id="contact-info" className="flex flex-col w-full mt-2">
-              <ul className="text-sm sm:text-base">
+              <ul className="text-[2vw]">
                 {information.map((item, i) => (
                   <li key={i} className="text-white">
                     <span className="font-bold text-gray-400">
