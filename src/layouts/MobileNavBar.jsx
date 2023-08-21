@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { DarkModeContext } from '../context/DarkModeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars,
+  faTimes,
+  faFileLines,
+} from '@fortawesome/free-solid-svg-icons';
 import darkModeLogo from '/src/assets/logos/main-dark-mode.png';
 import lightModeLogo from '/src/assets/logos/main-light-mode.png';
 
@@ -20,6 +24,7 @@ const MobileNavBar = () => {
     { linkName: 'Home Base', path: '/' },
     { linkName: 'My Life', path: '/about' },
     { linkName: 'Portfolio', path: '/portfolio' },
+    { linkName: 'Resume', path: '/resume', icon: faFileLines },
   ];
 
   return (

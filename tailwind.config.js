@@ -4,7 +4,6 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   darkMode: 'class', // 'media' or 'class'
-  mode: 'jit',
   theme: {
     extend: {
       fontFamily: {
