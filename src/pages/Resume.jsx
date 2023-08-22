@@ -31,7 +31,7 @@ const Resume = () => {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'myfile.pdf';
+      a.download = 'brian_foley_resume.pdf';
       document.body.appendChild(a); // Required for this to work in Firefox
       a.click();
       a.remove();
