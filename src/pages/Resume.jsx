@@ -1,13 +1,17 @@
 import ReactDOMServer from 'react-dom/server';
 import { generateTailwindCSS } from '../utils/util';
+import { useState } from 'react';
 
 const Resume = () => {
+  var [isDownloading, setIsDownloading] = useState(false);
+
   const handleDownloadPDF = async () => {
     const htmlString = ReactDOMServer.renderToString(<Resume />);
 
     const css = await generateTailwindCSS();
 
     try {
+      setIsDownloading(true);
       const response = await fetch(
         'https://allthingsgreat-api-staging-53e3067142a5.herokuapp.com/api/v2/utility/downloadPDF',
         {
@@ -31,8 +35,10 @@ const Resume = () => {
       document.body.appendChild(a); // Required for this to work in Firefox
       a.click();
       a.remove();
+      setIsDownloading(false);
     } catch (error) {
       console.error('There was an error:', error);
+      setIsDownloading(false);
     }
   };
 
@@ -288,6 +294,7 @@ const Resume = () => {
                 ))}
                 <li>
                   <button
+                    disabled={isDownloading}
                     id="downloadButton"
                     className="rounded p-1 border text-sm border-black bg-gray-400"
                     onClick={handleDownloadPDF}
