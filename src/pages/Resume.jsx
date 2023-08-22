@@ -75,39 +75,36 @@ const Resume = () => {
         {
           description: 'Montana State Extension Highlight Page Automation',
           challenge:
-            'The legacy method of creating Extension County Highlights had become outdated and a new method was needed to make the lives easier for 94 MSU Extension agents.',
+            'The legacy method for creating Extension County Highlights had become outdated. A new method was needed to simplify the process for the 94 MSU Extension agents.',
           action:
-            'I collaborated with the Director of MSU Extension Communications to produce user stories and give suggestions as to how to streamline this process. All user stories were clearly defined and put into Jira as tasks/sub-tasks. I created an API written in Node/Express and implemented an endpoint to handle the automation of generating an Extension Highlight Page. I organized the repository in an industry-standard manner and wrote additional helper methods as well as utilized 3rd party libraries such as cheerio for XML manipulation. The process called the Omni Campus CMS API to pull source files, create site directories, update an Extension index page, and publish all files to the production server. Jest tests were written to achieve 90%+ test coverage.',
+            'I collaborated with the Director of MSU Extension Communications to produce user stories and offered suggestions to streamline the process. All user stories were clearly defined and added to Jira as tasks/sub-tasks. I developed an API using Node/Express and introduced an endpoint for the automated generation of an Extension Highlight Page. The repository was organized following industry standards, and I introduced additional helper methods. I also utilized 3rd-party libraries, such as cheerio, for XML manipulation. The system accessed the Omni Campus CMS API to retrieve source files, create site directories, update web page contents, and upload all files to the production server. Jest tests were crafted to achieve over 90% test coverage.',
           result:
-            'MSU Extension agents can now log into a password protected page (utilized .htaccess file) and fill out a form outlining county highlights pertaining to a specific program area - saving hours of time web editing. This new method will bring in more viewers to an Extension Highlight as the pages are now able to be read by search engine crawlers, ultimately leveraging SEO. This will be rolled out for use in September of 2023.',
+            'MSU Extension agents can now access a password-protected page (using a .htaccess file) and complete a form detailing county highlights for specific program areas. This approach saves them hours previously spent on web editing. Additionally, these new pages are searchable by search engine crawlers, enhancing SEO. The method will be launched in September 2023.',
         },
         {
           description: 'CMS Training Module Creation Automation',
           challenge:
-            'The Montana State Web and Digital Team would receive on average 7-10 tickets a week tocreate new user accounts and training modules associated with these users. I needed to come up with a solution to automate this creation process using the Omni Campus CMS API.',
+            'The Montana State Web and Digital Team received an average of 7-10 tickets per week to create new user accounts and training modules associated with these users. I was tasked with developing a solution to automate this creation process using the Omni Campus CMS API.',
           action:
-            'I game-planned with Web and Digital developers to precisely define all steps of the manual process and convert these steps into detailed Jira tickets. I utilized the same node/express API that was used to create the Extension Highlight Automation process (above) since this API already included a CMS API library for making RESTful calls – this greatly reduced code duplication. The process contained actions for creating a new user account, setting the correct permissions for the user, copying directories, updating source files, and publishing the training module for use.',
+            'I collaborated with Web and Digital developers to precisely define all steps of the manual process and translated these steps into detailed Jira tickets. I employed the same Node/Express API that was used for the Extension Highlight Automation process (mentioned above). This API already incorporated a CMS API library for making RESTful calls, which greatly minimized code duplication. The automated process included actions for creating a new user account, assigning the appropriate permissions to the user, duplicating directories, updating source files, and launching the training module for use.',
           result:
-            'The time it takes to complete these tickets went from ~5 minutes, down to ~30 seconds, freeing up roughly 39 hours annually for our dev team.',
+            'The time required to address each ticket was reduced from approximately 5 minutes to about 30 seconds. This change results in a savings of roughly 39 hours annually for our development team.',
         },
         {
           description:
             'Single Page Application Single-Sign-On (SSO) Implementation',
-          challenge:
-            'Many 3rd party npm packages existed for server side SSO authentication and a single package written for React SPA’s, but nothing for VueJS. We needed to find a viable solution for integrating SSO in our VueJS single page application.',
+          challenge: `Many 3rd party npm packages existed for server-side SSO authentication and one package was available for React SPAs. However, there wasn't a package tailored for VueJS. Our challenge was to find a suitable solution for integrating SSO into our VueJS single page application.`,
           action:
-            'I corresponded with our UIT department to better understand our Centralized Authentication System (CAS) and obtain a standardized method for implementing Single Sign On. I cross referenced many different code repositories including the CAS repository written in Java, server side packages written in javascript, and a React CAS Client package. After a better understanding of the process, I extracted code from the React CAS client into front-end logic and back-end logic that we could use on our API. After obtaining a successful login with a prototype Vue Single Page Application, I handed off the front-end code to our front-end dev’s and the backend-logic code our backend developer.',
-          result:
-            'We are now able to log in once and stay authenticated across all of our applications written in the MEVN stack. Additionally, we don’t have to store individual user accounts pertaining to each application – reducing data duplication and convoluting our database – the CAS handles the storage/retrieval of all this data.',
+            'I collaborated with our UIT department to gain a deeper understanding of our Centralized Authentication System (CAS) and to determine a standardized method for implementing Single Sign-On. I cross-referenced several code repositories, including the CAS repository written in Java, server-side packages in JavaScript, and a React CAS Client package. With this enhanced understanding, I adapted code from the React CAS client, dividing it into front-end and back-end logic suitable for our API. Once a successful login was achieved with a prototype Vue Single Page Application, I passed the front-end code to our front-end developers and the back-end logic to our backend developer.',
+          result: `We can now log in once and maintain authentication across all of our applications built on the MEVN stack. Additionally, there's no need to store individual user accounts specific to each application. This reduces data duplication and prevents our database from becoming overly complex. The CAS manages the storage and retrieval of all user data.`,
         },
         {
           description: 'Zendesk Help and Support',
           challenge:
-            'Various tickets related to the Omni Campus CMS including user access, password protecting pages, styling pages, modifying XML, updating our existing applications written in PHP, and writing page redirects.',
+            'We received various tickets related to the Omni Campus CMS. These tickets addressed issues such as user access, password-protecting pages, styling pages, modifying XML, updating our pre-existing applications developed in PHP, and creating page redirects.',
           action:
-            'I communicate with customers to clearly understand the problem at hand and collaborate with team members to solve the issues that various stakeholders around campus have.',
-          result:
-            '414 tickets solved (and counting) with an average Full Resolution Time of 17.6 hours.',
+            'I communicate with customers to understand their problems clearly and collaborate with team members to address the concerns of various stakeholders across the campus.',
+          result: `I've resolved 414 tickets (and counting) with an average Full Resolution Time of 17.6 hours.`,
         },
       ],
     },
@@ -120,20 +117,20 @@ const Resume = () => {
         {
           description: 'DevOps Deployments',
           challenge:
-            'Accumulators repositories needed to be deployed on weekends at 7pm to limit user downtime. Environment variables and YAML files needed to be properly configured to ensure a smooth deployment.',
+            'Accumulator repositories needed to be deployed on weekends at 7 pm to minimize user downtime. It was essential that environment variables and YAML files were correctly configured to guarantee a seamless deployment.',
           action:
-            'Led a development team of 3 to ensure production environment variables and CI/CD pipeline files were properly configured. I collaborated with cross functional teams to identify deployment issues by analyzing stack traces and logs.',
+            'I led a development team of three to ensure that production environment variables and CI/CD pipeline files were correctly set up. Collaborating with cross-functional teams, we identified deployment issues by analyzing stack traces and logs.',
           result:
-            '10+ deployment weekends worked resulting in the processing of 10,000+ claims in the production server.',
+            'Over 10 deployment weekends, we successfully processed more than 10,000 claims on the production server.',
         },
         {
           description: 'CMS Training Module Creation Automation',
           challenge:
-            'Multiple development teams were working on separate feature branches, which resulted in intricate merge conflicts and inconsistent unit tests.',
+            'Multiple development teams were working on separate feature branches, leading to complex merge conflicts and inconsistent unit tests.',
           action:
-            'I meticulously resolved all merge conflicts arising from the integration of these branches. Additionally, I modified and enhanced Mocha unit tests to ensure not only that they passed consistently but also achieved a code coverage of 90% or higher.',
+            'I meticulously resolved all merge conflicts resulting from the integration of these branches. Additionally, I refined and enhanced Mocha unit tests, ensuring they not only passed consistently but also achieved code coverage of 90% or higher.',
           result:
-            'Ensured seamless integration of multiple feature branches, leading to a cohesive and error-free codebase with high-quality testing benchmarks exceeding 90% coverage.',
+            'I ensured the smooth integration of multiple feature branches, culminating in a cohesive and error-free codebase. Our testing benchmarks consistently exceeded 90% coverage.',
         },
       ],
     },
@@ -147,20 +144,20 @@ const Resume = () => {
           description:
             'Chemical Biological Radiological and Nuclear (CBRN) Training',
           challenge:
-            'Amidst the escalating threat of chemical warfare at the North/South Korean border, Air Force Personnel needed refresher training in Chemical Biological Radiological and Nuclear (CBRN) Defense.',
+            'Amid the escalating threat of chemical warfare at the North/South Korean border, Air Force Personnel required refresher training in Chemical Biological Radiological and Nuclear (CBRN) Defense.',
           action:
-            'I instructed intensive CBRN training for Air Force personnel. This encompassed practical exercises including donning the m50 gas mask and the chemical protective overgarments. Over the course of an hour-long exercise, trainees were equipped with tools such as the Joint Chemical Agent Detectors, M9 chemical detection paper, and Radiation detection devices. The exercises were made comprehensive with the simulation of post-attack reconnaissance routes.',
+            'I led intensive CBRN training sessions for Air Force personnel, covering practical exercises such as donning the M50 gas mask and chemical protective overgarments. During these hour-long exercises, trainees utilized tools like the Joint Chemical Agent Detectors, M9 chemical detection paper, and radiation detection devices. Additionally, I integrated post-attack reconnaissance route simulations to ensure comprehensive training.',
           result:
-            'The rigorous trainings I conducted ultimately equipped 500+ Airmen with essential CBRN defense knowledge and skills, substantially enhancing their preparedness and safety during deployments in high-threat environments.',
+            'Through the rigorous training sessions I conducted, over 500 Airmen were endowed with essential CBRN defense knowledge and skills. This significantly bolstered their preparedness and safety for deployments in high-threat environments.',
         },
         {
           description: 'Inventory Tracking and Operational Checks',
           challenge:
-            'The Emergency Management flight had over $2 million invested in equipment, yet lacked an efficient system to monitor and manage these assets, raising concerns about potential loss and readiness for emergencies.',
+            'The Emergency Management flight had invested over $2 million in equipment but lacked an efficient system to monitor and manage these assets. This shortfall raised concerns about potential loss and readiness for emergencies.',
           action:
-            'I took the lead in devising and implementing a comprehensive logistics program. I designed an interactive spreadsheet tailored to meticulously track every asset, organized the data logically, and ensured consistent operational checks on all equipment to monitor its condition and location.',
+            'I took the lead in devising and implementing a comprehensive logistics program. Using an interactive spreadsheet, I meticulously tracked every asset, organized the data in a logical manner, and ensured consistent operational checks on all equipment to monitor its condition and location.',
           result:
-            'Over a span of 2 years, we recorded zero lost equipment, and all assets remained consistently ready for both exercises and real-world emergency responses.',
+            'Over a span of 2 years, we recorded zero lost equipment. All assets remained consistently prepared for both exercises and real-world emergencies.',
         },
       ],
     },
@@ -323,13 +320,10 @@ const Resume = () => {
             className="w-full m-auto flex flex-row justify-center items-center"
           >
             <p>
-              I am a full-stack developer leveraging modern web frameworks such
-              as VueJS and ReactJS, as well as writing clean and concise API’s.
-              I’m seeking position with a high intensity startup and a team of
-              go-getters. I’m a self-motivated and self-driven developer who can
-              solve problems and overcome technical obstacles. I have an
-              obsession with working on software as well as learning and
-              growing.
+              I am a full-stack developer specializing in the MEVN (MongoDB,
+              ExpressJS, VueJS, NodeJS) Stack, writing clean and concise APIs. I
+              am seeking a position with a small to medium size company and a
+              team of go-getters.
             </p>
           </div>
           <hr className="border border-gray-400 w-full m-auto my-4" />
