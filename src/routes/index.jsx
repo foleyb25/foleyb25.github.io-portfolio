@@ -33,6 +33,9 @@ const RoutesComponent = () => {
         case '/blog':
           document.body.classList.add('blog-page');
           break;
+        case '/resume':
+          document.body.classList.add('resume-page');
+          break;
         default:
           document.body.classList.add('home-page');
           break;

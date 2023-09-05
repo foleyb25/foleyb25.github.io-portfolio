@@ -80,6 +80,8 @@ const Resume = () => {
             'I collaborated with the Director of MSU Extension Communications to produce user stories and offered suggestions to streamline the process. All user stories were clearly defined and added to Jira as tasks/sub-tasks. I developed an API using Node/Express and introduced an endpoint for the automated generation of an Extension Highlight Page. The repository was organized following industry standards, and I introduced additional helper methods. I also utilized 3rd-party libraries, such as cheerio, for XML manipulation. The system accessed the Omni Campus CMS API to retrieve source files, create site directories, update web page contents, and upload all files to the production server. Jest tests were crafted to achieve over 90% test coverage.',
           result:
             'MSU Extension agents can now access a password-protected page (using a .htaccess file) and complete a form detailing county highlights for specific program areas. This approach saves them hours previously spent on web editing. Additionally, these new pages are searchable by search engine crawlers, enhancing SEO. The method will be launched in September 2023.',
+          skillsUsed:
+            'Communication, NodeJS, ExpressJS, Backend Development, Content Management System, XML, HTML, CSS, Debugging, API',
         },
         {
           description: 'CMS Training Module Creation Automation',
@@ -89,6 +91,8 @@ const Resume = () => {
             'I collaborated with Web and Digital developers to precisely define all steps of the manual process and translated these steps into detailed Jira tickets. I employed the same Node/Express API that was used for the Extension Highlight Automation process (mentioned above). This API already incorporated a CMS API library for making RESTful calls, which greatly minimized code duplication. The automated process included actions for creating a new user account, assigning the appropriate permissions to the user, duplicating directories, updating source files, and launching the training module for use.',
           result:
             'The time required to address each ticket was reduced from approximately 5 minutes to about 30 seconds. This change results in a savings of roughly 39 hours annually for our development team.',
+          skillsUsed:
+            'Communication, NodeJS, ExpressJS, Backend Development, Content Management System (CMS), XML, HTML, CSS, Debugging, API',
         },
         {
           description:
@@ -97,6 +101,8 @@ const Resume = () => {
           action:
             'I collaborated with our UIT department to gain a deeper understanding of our Centralized Authentication System (CAS) and to determine a standardized method for implementing Single Sign-On. I cross-referenced several code repositories, including the CAS repository written in Java, server-side packages in JavaScript, and a React CAS Client package. With this enhanced understanding, I adapted code from the React CAS client, dividing it into front-end and back-end logic suitable for our API. Once a successful login was achieved with a prototype Vue Single Page Application, I passed the front-end code to our front-end developers and the back-end logic to our backend developer.',
           result: `We can now log in once and maintain authentication across all of our applications built on the MEVN stack. Additionally, there's no need to store individual user accounts specific to each application. This reduces data duplication and prevents our database from becoming overly complex. The CAS manages the storage and retrieval of all user data.`,
+          skillsUsed:
+            'Communication, VueJS, Debugging, 3rd-party package research, Code reviews',
         },
         {
           description: 'Zendesk Help and Support',
@@ -105,6 +111,7 @@ const Resume = () => {
           action:
             'I communicate with customers to understand their problems clearly and collaborate with team members to address the concerns of various stakeholders across the campus.',
           result: `I've resolved 414 tickets (and counting) with an average Full Resolution Time of 17.6 hours.`,
+          skillsUsed: 'Customer service',
         },
       ],
     },
@@ -122,15 +129,19 @@ const Resume = () => {
             'I led a development team of three to ensure that production environment variables and CI/CD pipeline files were correctly set up. Collaborating with cross-functional teams, we identified deployment issues by analyzing stack traces and logs.',
           result:
             'Over 10 deployment weekends, we successfully processed more than 10,000 claims on the production server.',
+          skillsUsed:
+            'Java, Cross-functional team coordination, Jenkins, Pivotal Cloud Foundry, Urban Code Deploy',
         },
         {
-          description: 'CMS Training Module Creation Automation',
+          description: 'Merge Conflict Resolution and Unit Testing',
           challenge:
             'Multiple development teams were working on separate feature branches, leading to complex merge conflicts and inconsistent unit tests.',
           action:
             'I meticulously resolved all merge conflicts resulting from the integration of these branches. Additionally, I refined and enhanced Mocha unit tests, ensuring they not only passed consistently but also achieved code coverage of 90% or higher.',
           result:
             'I ensured the smooth integration of multiple feature branches, culminating in a cohesive and error-free codebase. Our testing benchmarks consistently exceeded 90% coverage.',
+          skillsUsed:
+            'Git, Github, Merge conflict resolution, Mocha testing, Maven, Cross-functional team coordination, ',
         },
       ],
     },
@@ -149,6 +160,7 @@ const Resume = () => {
             'I led intensive CBRN training sessions for Air Force personnel, covering practical exercises such as donning the M50 gas mask and chemical protective overgarments. During these hour-long exercises, trainees utilized tools like the Joint Chemical Agent Detectors, M9 chemical detection paper, and radiation detection devices. Additionally, I integrated post-attack reconnaissance route simulations to ensure comprehensive training.',
           result:
             'Through the rigorous training sessions I conducted, over 500 Airmen were endowed with essential CBRN defense knowledge and skills. This significantly bolstered their preparedness and safety for deployments in high-threat environments.',
+          skillsUsed: 'Public speaking, Preparedness',
         },
         {
           description: 'Inventory Tracking and Operational Checks',
@@ -158,6 +170,7 @@ const Resume = () => {
             'I took the lead in devising and implementing a comprehensive logistics program. Using an interactive spreadsheet, I meticulously tracked every asset, organized the data in a logical manner, and ensured consistent operational checks on all equipment to monitor its condition and location.',
           result:
             'Over a span of 2 years, we recorded zero lost equipment. All assets remained consistently prepared for both exercises and real-world emergencies.',
+          skillsUsed: 'Attention to detail, Data entry, Organization',
         },
       ],
     },
@@ -362,6 +375,10 @@ const Resume = () => {
                             <div className="pl-5">
                               <span className="font-bold">Result: </span>
                               {item.result}
+                            </div>
+                            <div className="pl-5">
+                              <span className="font-bold">Skills: </span>
+                              {item.skillsUsed}
                             </div>
                           </li>
                         </ul>
