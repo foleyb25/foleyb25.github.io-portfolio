@@ -91,16 +91,6 @@ const MobileNavBar = () => {
             >
               <FontAwesomeIcon icon={['fab', 'github']} className="text-4xl" />
             </a>
-            <a
-              href="https://www.linkedin.com/in/brian-foley-456624196/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={['fab', 'linkedin']}
-                className="text-4xl"
-              />
-            </a>
           </div>
         </div>
       </div>
