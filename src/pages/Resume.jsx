@@ -57,7 +57,7 @@ const Resume = () => {
     },
     {
       text: 'Current Location',
-      info: 'Helena, Montana',
+      info: 'Austin, Texas',
     },
     {
       text: 'Web',
