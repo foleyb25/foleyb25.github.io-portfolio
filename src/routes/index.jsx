@@ -5,7 +5,6 @@ import About from '../pages/About';
 import Portfolio from '../pages/Portfolio';
 import Blog from '../pages/Blog';
 import BlogView from '../pages/BlogView';
-import Resume from '../pages/Resume';
 import { DarkModeContext } from '../context/DarkModeContext';
 
 const RoutesComponent = () => {
@@ -33,9 +32,6 @@ const RoutesComponent = () => {
         case '/blog':
           document.body.classList.add('blog-page');
           break;
-        case '/resume':
-          document.body.classList.add('resume-page');
-          break;
         default:
           document.body.classList.add('home-page');
           break;
@@ -54,7 +50,6 @@ const RoutesComponent = () => {
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:id" element={<BlogView />} />
-      <Route path="/resume/" element={<Resume />} />
       <Route exact path="/" element={<Home />} />
     </Routes>
   );

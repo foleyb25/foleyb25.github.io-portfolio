@@ -10,7 +10,6 @@ import {
   faHome,
   faInfoCircle,
   faBriefcase,
-  faFileLines,
 } from '@fortawesome/free-solid-svg-icons';
 
 const DesktopNavBar = ({ isExpanded, setIsExpanded }) => {
@@ -22,10 +21,9 @@ const DesktopNavBar = ({ isExpanded, setIsExpanded }) => {
   };
 
   const links = [
-    { linkName: 'Home Base', path: '/', icon: faHome },
-    { linkName: 'My Life', path: '/about', icon: faInfoCircle },
-    { linkName: 'Portfolio', path: '/portfolio', icon: faBriefcase },
-    { linkName: 'Resume', path: '/resume', icon: faFileLines },
+    { linkName: 'Home', path: '/', icon: faHome },
+    { linkName: 'About', path: '/about', icon: faInfoCircle },
+    { linkName: 'Projects', path: '/portfolio', icon: faBriefcase },
   ];
 
   return (
