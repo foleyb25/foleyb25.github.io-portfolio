@@ -5,7 +5,6 @@ import { DarkModeContext } from '../context/DarkModeContext';
 import backgroundImageDay from '/src/assets/images/outdoor-arcade-day-min.webp';
 import backgroundImageNight from '/src/assets/images/indoor-arcade-night-min.webp';
 import halfMarathonImage from '/src/assets/images/half_marathon.webp';
-import beerLeagueImage from '/src/assets/images/beer_league.webp';
 import golfImage from '/src/assets/images/golf.webp';
 
 const About = () => {
@@ -48,17 +47,6 @@ const About = () => {
       This newfound passion for running has changed my life
       in the most positive way imaginable.`,
       imageUrl: halfMarathonImage,
-      reverse: false,
-      primary: true,
-    },
-    {
-      title: 'Beer League Hockey',
-      text: `I'm adding pond hockey to this one as well. I bought my first pair
-      of skates while on home for leave in the winter of 2014. My friend
-      group and I went out for a night of drinking and woke up the next
-      morning to skate at the local park in Helena, Montana. I learned
-      to skate with a massive hangover and some liquid courage.`,
-      imageUrl: beerLeagueImage,
       reverse: false,
       primary: true,
     },
